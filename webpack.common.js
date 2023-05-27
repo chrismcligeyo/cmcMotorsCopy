@@ -17,14 +17,14 @@ module.exports = {
     // })], //creates index.htm n dist and new script with main.js that includes content hash at bottom of created index
     module: {
         rules: [
-            {
-                test: /\.scss$/,      // /\.css$/,
-                use: [
-                    "style-loader", //3. injects style into dom
-                    "css-loader", //2. Turn css to common js
-                    "sass-loader" //1. turns sass into css
-                ],
-            },
+            // {
+            //     test: /\.scss$/,      // /\.css$/,
+            //     use: [
+            //         "style-loader", //3. injects style into dom
+            //         "css-loader", //2. Turn css to common js
+            //         "sass-loader" //1. turns sass into css
+            //     ],
+            // },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
