@@ -292,6 +292,31 @@ section{
     }
   }
 }
+
+
+/*===========================
+| | | | caar-profile section
+=============================
+ */
+
+ #car-profile-section{
+  .cars-grid-list-nav{
+    display:flex;
+    flex-direction: column;
+    .type-cars-nav{
+      display:flex;
+      flex-direction: row;
+      flex:1;
+      margin:2rem 0;
+    }
+  }
+
+ }
+
+
+
+
+
 /*clicked styles
         (added laer in js)
     
