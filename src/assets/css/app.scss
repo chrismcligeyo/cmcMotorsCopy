@@ -13,8 +13,8 @@
 html,
 body {
   height: 100%; /*takes size of browser window*/
-  width: 100%;
-  overflow: hidden;
+  // width: 100%;
+  // overflow: hidden;
 }
 
 body {
@@ -132,7 +132,9 @@ img {
 }
 
 /* Navbar */
-
+section{
+  overflow: hidden;
+}
 #navbar-section {
   background: #fff;
   .contact-top {
@@ -272,7 +274,6 @@ img {
  */
 
 #home-section {
-  height:100vh;
   .carousel-caption {
     position: absolute;
     top: 150px;
@@ -287,7 +288,7 @@ img {
       background: #ed1f1f;
       text-align: center;
       padding: 0.5rem 2rem;
-      margin: 1rem;
+      margin: 1rem 0;
     }
   }
 }
