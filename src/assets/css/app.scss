@@ -4,17 +4,17 @@
 //fontawsome css/scss
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 
-
-//if not add owl imge path, brings error of cnnot display owl.play.png in npm
-$owl-image-path: "~owl.carousel/src/img/";
-@import "~owl.carousel/src/scss/owl.carousel";
-@import "~owl.carousel/src/scss/owl.theme.default";
-
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  height: 100%; /*takes size of browser window*/
+  width: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -101,9 +101,10 @@ p {
 .btn {
   display: inline-block;
   color: #fff;
-  background: #ED1F1F;
+  background: #ed1f1f;
   padding: 0.5rem 2rem;
   border: none;
+
   // border-radius: 5px;
 }
 
@@ -126,193 +127,199 @@ p {
   border-bottom: #444 dotted 1px;
 }
 
-img{
-  width:100%
+img {
+  width: 100%;
 }
 
 /* Navbar */
 
 #navbar-section {
-  .contact-top{
+  background: #fff;
+  .contact-top {
     position: relative;
     height: 0px;
     top: 10px;
-      left: 800px;
-      z-index:2;
-     
-      
-  
-      a{
-        text-decoration: none;
-        padding:20px;
-        font-size: 8px;
-        color:#fff;
-        text-align:center ;
+    left: 800px;
+    z-index: 2;
 
-        img{
-          width:15px;
-          height:15px;
-    
-          
-        }
+    a {
+      text-decoration: none;
+      padding: 20px;
+      font-size: 8px;
+      color: #fff;
+      text-align: center;
+
+      img {
+        width: 15px;
+        height: 15px;
       }
-  
+    }
   }
-  .contact-top-social{
+  .contact-top-social {
     position: relative;
     height: 0px;
     top: 10px;
-      left: 1200px;
-      z-index:2;
-      padding: 0px;
+    left: 1200px;
+    z-index: 2;
+    padding: 0px;
 
-      a{
-        text-decoration: none;
-      
-        font-size: 8px;
-        color:#fff;
-        text-align:center ;
-        padding-right: 7px;
+    a {
+      text-decoration: none;
 
-        img{
-          width:10px;
-          height:10px;
-          
-    
-          
-        }
+      font-size: 8px;
+      color: #fff;
+      text-align: center;
+      padding-right: 7px;
+
+      img {
+        width: 10px;
+        height: 10px;
       }
+    }
   }
   #navbar {
- 
     display: flex;
     position: sticky;
-    top:0;
-    background:url('../imgs/cmsNav.png') no-repeat center center/cover;
+    top: 0;
+    background: url("../imgs/cmsNav.png") no-repeat center center/cover;
     color: #fff;
     justify-content: space-between;
     z-index: 1;
     padding: 1rem;
-    .cmc-logo-country-list{
+    .cmc-logo-country-list {
       display: flex;
       justify-content: space-around;
-      height:50px;
+      height: 50px;
       margin-bottom: 30px;
       //background:#fff;
-      .dropdown{
-        width:50px;
+      .dropdown {
+        width: 50px;
         margin-left: 50px;
         margin-top: 40px;
         position: relative;
-        .select{
+        .select {
           background: #fff;
-          color:#333;
-          display:flex;
+          color: #333;
+          display: flex;
           border: 2px #fff solid;
-          padding:2px;
+          padding: 2px;
           width: 70px;
-          cursor:pointer;
+          cursor: pointer;
           transition: background 0.3s;
-          &:hover{
-            background:#f4f4f4;
+          &:hover {
+            background: #f4f4f4;
           }
-          .caret{
-            width:0;
+          .caret {
+            width: 0;
             height: 0;
-            border-left:5px solid transparent;
-            border-left:5px solid transparent;
+            border-left: 5px solid transparent;
+            border-left: 5px solid transparent;
             border-top: 6px solid #212529;
             transition: 0.3s;
-            
-
           }
         }
-        .menu{
-          list-style:none;
+        .menu {
+          list-style: none;
           padding: 0.2em 0.5em;
           border: 1px #363a43 solid;
           background: #323741;
           color: #fff;
-          position:absolute;
+          position: absolute;
           top: 2em;
-          left:50%;
-          width:100%;
+          left: 50%;
+          width: 100%;
           transform: translateX(-50%);
-          opacity:0;
-          display:none;
-          transition:0.2s;
+          opacity: 0;
+          display: none;
+          transition: 0.2s;
           z-index: 1;
-          li{
+          li {
             padding: 0.7em 0.5em;
-            margin:0.3em 0;
-            cursor:pointer;
-            &:hover{
-              background: #f4f4f4
+            margin: 0.3em 0;
+            cursor: pointer;
+            &:hover {
+              background: #f4f4f4;
             }
           }
         }
-      
       }
-      img{
-        width:50px;
+      img {
+        width: 50px;
         margin-left: 210px;
         margin-top: 40px;
       }
     }
-    .nav-buttons{
+    .nav-buttons {
       margin-top: 40px;
       margin-right: 180px;
-      
-        .btn btn-red{
-          color: #fff;
-        
-        }
-        .btn-white{
-          background: #fff !important;
-          border: 1px #000 solid;
-          color: #000;
-          border-radius: none;
-        }
-      
-    
-    }
 
-   
+      .btn-red {
+        color: #fff;
+      }
+      .btn-white {
+        background: #fff !important;
+        border: 1px #000 solid;
+        color: #000;
+        border-radius: none;
       }
     }
-      /*clicked styles
+  }
+}
+
+/*===========================
+| | | | Home Section with carousel slider landing page
+=============================
+ */
+
+#home-section {
+  .carousel-caption {
+    position: absolute;
+    top: 150px;
+    left: -550px;
+  }
+  .land-page-button {
+    a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      background: #ed1f1f;
+      text-align: center;
+      padding: 0.5rem 2rem;
+      margin: 1rem;
+    }
+  }
+}
+/*clicked styles
         (added laer in js)
     
         */
-        .selected-clicked{
-          border: 2px #26489a solid;
-          box-shadow: 0 0 0.8em #26489a;
-        }
+.selected-clicked {
+  border: 2px #26489a solid;
+  box-shadow: 0 0 0.8em #26489a;
+}
 
-        /*rotate styles
+/*rotate styles
         (added laer in js)
     
         */
-        .caret-rotate{
-          transform: rotate(180deg);
+.caret-rotate {
+  transform: rotate(180deg);
+}
 
-        }
-
-        /*active styles
+/*active styles
         (added laer in js)
     
         */
-  
-        .active{
-          background:#212529
-        }
 
-        /*open styles
+.active {
+  background: #212529;
+}
+
+/*open styles
         (added laer in js)
     
         */
-        .menu-open{
-          display:block;
-          opacity:1;
-        }
-
+.menu-open {
+  display: block;
+  opacity: 1;
+}
