@@ -552,6 +552,66 @@ section {
           =============================
           */
 
+          #bottom-footer{
+            background: url(../../assets/imgs/footer.jpg);
+            height:400px;
+            // 
+            
+            .footer-details{
+              display:flex;
+              color:white;
+              margin-left: 200px;
+             
+               .lorem-search{
+                margin-top: 80px;
+
+              h3{
+                color:#fff;
+                font-size: 15px;
+              }
+              p{
+                font-size:12px;
+              };
+              .readmore{
+                h3{
+                  font-weight: bolder;
+                  margin-top:40px;
+                  margin-bottom:40px;
+                }
+                // .input-group{
+                //   .input-group-append{
+                //     .input-group-text{
+                //   background-color: #ed1f1f !important;
+                // }
+
+                //   }
+
+                // }
+                
+                
+              }
+            }
+              .useful-links{
+                margin-top: 80px;
+                margin-left: 200px;
+                h3{
+                  color:#fff;
+                  font-size: 12px;
+                }
+              }
+              .recent-posts{
+                margin-top: 80px;
+                margin-left: 200px;
+                h3{
+                  color:#fff;
+                  font-size: 12px;
+                }
+              }
+
+            }
+           
+          }
+
 /*range-filter css*/
 
 .range_container {
