@@ -7,7 +7,7 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin"); //when gives error
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin"); //when gives error of not a constructor remove {},
-const TinypngPlugin = require("tinypng-plugin-webpack-full-featured");
+//const TinypngPlugin = require("tinypng-plugin-webpack-full-featured");
 //const CompressionPlugin = require("compression-webpack-plugin");
 module.exports = merge(common, {
     mode: "production",  // placed this in package.json under scripts
@@ -39,18 +39,18 @@ module.exports = merge(common, {
         }),
         new CleanWebpackPlugin(),
 
-        new TinypngPlugin({
-            from: path.resolve(__dirname, './src/assets/imgs'),
-            extentions: ['png', 'jpeg', 'jpg'],
-            silent: false,
-            cache: true,
-        }),
-        new TinypngPlugin({
-            from: path.resolve(__dirname, './src/assets/video'),
-            extentions: ['jpg'],
-            silent: false,
-            cache: true,
-        }),
+        // new TinypngPlugin({
+        //     from: path.resolve(__dirname, './src/assets/imgs'),
+        //     extentions: ['png', 'jpeg', 'jpg'],
+        //     silent: false,
+        //     cache: true,
+        // }),
+        // new TinypngPlugin({
+        //     from: path.resolve(__dirname, './src/assets/video'),
+        //     extentions: ['jpg'],
+        //     silent: false,
+        //     cache: true,
+        // }),
         // new CompressionPlugin({
         //     filename: path.resolve(__dirname, './src/assets/video/alfones_bg_video.webm'),
         //     algorithm: "brotliCompress",

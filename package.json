@@ -63,7 +63,7 @@
     "popper.js": "^1.16.1",
     "responsive-tabs": "^1.6.3",
     "terser": "3.14.1",
-    "tinypng-plugin-webpack-full-featured": "^1.2.2",
+   
     "waypoints": "^4.0.1",
     "wowjs": "^1.1.3"
   }
